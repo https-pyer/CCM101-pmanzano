@@ -1,4 +1,4 @@
-#Mission Overview
+# Mission Overview
 
 Congratulations!
 You have been accepted as a Junior Cloud Infrastructure Engineer Trainee at CloudNova Technologies, a
@@ -12,7 +12,7 @@ semester and will be updated after every laboratory activity.
 Complete each checkpoint carefully. Every completed task represents a real-world responsibility of a cloud
 engineer.
 
-#Objectives
+# Objectives
 
 Upon successful completion of this mission, you should be able to:
 * Access a cloud-based Linux environment using KillerCoda.
@@ -23,7 +23,7 @@ Upon successful completion of this mission, you should be able to:
 * Document technical work using Markdown.
 * Demonstrate proper documentation practices used by cloud professionals. 
 
-#Activities Performed
+# Activities Performed
 
 - Created Linux user
 - Gathered system information
@@ -31,7 +31,7 @@ Upon successful completion of this mission, you should be able to:
 - Created markdown files
 - Uploaded files to GitHub
 
-#Linux Commands Used
+# Linux Commands Used
 
 - pwd
 - whoami
@@ -46,7 +46,7 @@ Upon successful completion of this mission, you should be able to:
 - free
 - df
   
-#Skills Learned
+# Skills Learned
 
  - Linux navigation
 - Markdown
