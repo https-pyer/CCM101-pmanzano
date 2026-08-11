@@ -12,7 +12,7 @@ CPU(s): 1
 Architecture: x86_64
 
 ## Total Memory
-               total        used        free      shared  buff/cache   available
+#               total        used        free      shared  buff/cache   available
 # Mem:           1.9Gi       427Mi       857Mi       1.1Mi       785Mi       1.4Gi
 # Swap:          1.0Gi          0B       1.0Gi
 
