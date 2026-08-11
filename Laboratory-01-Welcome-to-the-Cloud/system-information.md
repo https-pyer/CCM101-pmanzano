@@ -12,7 +12,7 @@ CPU(s): 1
 Architecture: x86_64
 
 ## Total Memory
-2 GB
+1.9 GB
 
 ## Available Disk Space
 19G
