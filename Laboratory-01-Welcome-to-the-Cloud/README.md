@@ -45,7 +45,7 @@ Linux Commands Used
 - lscpu
 - free
 - df
-- 
+  
 Skills Learned
 
  - Linux navigation
