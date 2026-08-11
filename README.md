@@ -8,6 +8,6 @@ It contains the laboratory activities, exercises, screenshots, system informatio
 
 ## Contents
 
-** Laboratory 01 – Welcome to the Cloud**
+**Laboratory 01 – Welcome to the Cloud**
 
 This repository will be updated throughout the semester as I complete each laboratory activity.
