@@ -33,6 +33,7 @@ Upon successful completion of this mission, you should be able to:
 
 # Linux Commands Used
 
+- sudo
 - pwd
 - whoami
 - hostname
