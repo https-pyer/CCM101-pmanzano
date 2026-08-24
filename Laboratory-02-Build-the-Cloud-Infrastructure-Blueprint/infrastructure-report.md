@@ -356,4 +356,3 @@ findmnt
 > **Root Filesystem:** ext4
 > **Primary Interface:** enp1s0
 > **Hostname:** ubuntu
-
