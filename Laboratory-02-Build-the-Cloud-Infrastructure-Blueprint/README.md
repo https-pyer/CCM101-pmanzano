@@ -14,15 +14,12 @@ The laboratory also provided practical experience in **technical documentation, 
 
 The primary objectives of this laboratory activity were to:
 
-* ☁️ Understand the fundamental components of cloud infrastructure.
-* 🖥️ Investigate hardware and software resources within a Linux environment.
-* 💾 Identify compute, storage, and networking resources.
-* 🌐 Understand how cloud infrastructure components communicate and work together.
-* 🏗️ Design a basic cloud infrastructure architecture diagram.
-* 🔍 Compare cloud services offered by **AWS, Microsoft Azure, and Google Cloud Platform (GCP)**.
-* 📝 Develop professional technical documentation using Markdown.
-* 🗂️ Organize, manage, and maintain laboratory files using Git and GitHub.
-* 🚀 Gain practical experience with Linux as an essential technology in cloud computing.
+* ☁️ Explain the major components of cloud infrastructure.
+* 🖥️ Investigate the hardware and software resources available in a Linux environment.
+* 💾 Differentiate compute, storage, networking, and identity resources.
+* 🔗 Interpret how different cloud infrastructure components work and communicate with each other.
+* 📝 Create professional technical documentation using Markdown.
+* 🐙 Continue building a structured GitHub Cloud Computing Portfolio.
 
 ---
 
