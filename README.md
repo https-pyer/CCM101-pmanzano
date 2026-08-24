@@ -1,13 +1,45 @@
-# Cloud Computing Laboratory Portfolio
+# ☁️ Cloud Computing Laboratory Portfolio
 
-Hello! My name is **Pierre Edison Manzano** .
+## 👋 Welcome!
 
-I am a student currently taking Cloud Computing. This repository serves as my Cloud Computing laboratory portfolio for the semester.
+Hello! My name is **Pierre Edison Manzano**, a **Bachelor of Science in Information Technology (BSIT)** student at the **University of Eastern Pangasinan**.
 
-It contains the laboratory activities, exercises, screenshots, system information, and reflections that I complete throughout the semester.
+This repository serves as my **Cloud Computing Laboratory Portfolio** for the semester. It documents my learning journey, practical activities, technical exercises, and experiences in working with cloud computing technologies and infrastructure.
 
-## Contents
+Throughout the semester, I will use this repository to organize and showcase my laboratory outputs, demonstrating my progress in **☁️ Cloud Computing, 🐧 Linux, 🐙 GitHub, 💻 System Administration, and 📝 Technical Documentation**.
 
-**Laboratory 01 – Welcome to the Cloud**
+---
 
-This repository will be updated throughout the semester as I complete each laboratory activity.
+## 📚 Portfolio Contents
+
+### ☁️ Laboratory 01 — Welcome to the Cloud
+
+The first laboratory introduces the fundamentals of working in a **cloud-based Linux environment**. It includes activities involving Linux commands, system information gathering, file and directory management, Markdown documentation, and GitHub version control.
+
+📌 **This portfolio will be continuously updated throughout the semester** as I complete each laboratory activity, checkpoint, and technical exercise.
+
+---
+
+## 🗂️ What This Portfolio Contains
+
+* 🧪 **Laboratory Activities** — Completed laboratory tasks and exercises
+* 💻 **Technical Exercises** — Practical cloud and Linux activities
+* 📸 **Screenshots** — Visual evidence of completed tasks
+* 🖥️ **System Information** — Hardware and operating system details
+* 📝 **Documentation** — Technical notes and Markdown files
+* 💭 **Reflections** — Personal learning experiences and key takeaways
+* 🐙 **GitHub Repository** — Version-controlled collection of laboratory outputs
+
+---
+
+## 🎯 Portfolio Goal
+
+The goal of this portfolio is to **document my development as an IT student and future cloud professional** by maintaining an organized record of my laboratory activities, technical skills, and learning progress.
+
+> 🚀 **Learn. Practice. Document. Improve. Build for the Cloud.** ☁️
+
+---
+
+### 📌 Portfolio Status
+
+**🟢 Active — Continuously Updated Throughout the Semester**
