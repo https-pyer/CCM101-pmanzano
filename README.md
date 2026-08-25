@@ -16,6 +16,14 @@ Throughout the semester, I will use this repository to organize and showcase my 
 
 The first laboratory introduces the fundamentals of working in a **cloud-based Linux environment**. It includes activities involving Linux commands, system information gathering, file and directory management, Markdown documentation, and GitHub version control.
 
+### ☁️ Laboratory 02 — Build the Cloud Infrastructure Blueprint
+
+Laboratory 02 focused on exploring the core components of cloud infrastructure and understanding how these components interact within a cloud environment.
+
+The activities involved investigating a Linux cloud server through the KillerCoda Playground, examining CPU, memory, storage, and networking resources, identifying essential infrastructure components, creating a basic cloud architecture, and comparing infrastructure services offered by AWS, Microsoft Azure, and Google Cloud Platform (GCP).
+
+This laboratory also enhanced my knowledge of Linux system administration, cloud infrastructure, technical documentation, Git, and GitHub.
+
 📌 **This portfolio will be continuously updated throughout the semester** as I complete each laboratory activity, checkpoint, and technical exercise.
 
 ---
