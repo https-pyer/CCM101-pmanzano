@@ -1,4 +1,4 @@
-# ☁️ Explore the Three Cloud Platforms
+# ☁️ Checkpoint 2 - Explore the Three Cloud Platforms
 
 ## 🟢 Google Cloud Platform (GCP) Research
 
