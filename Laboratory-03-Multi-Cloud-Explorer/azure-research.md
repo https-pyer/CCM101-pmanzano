@@ -24,10 +24,6 @@ The **Azure Portal** is a web-based management platform used to access and contr
 
 Through the Azure Portal, users can create, configure, monitor, and manage different cloud resources. It also provides tools for viewing resource information and managing Azure services from a single interface.
 
-**Screenshot:**
-
-* [Microsoft Azure Homepage](https://github.com/rodelqwerty/CCM101-rcontawe/blob/main/Laboratory-03-Multi-Cloud-Explorer/screenshots/azure-homepage.png)
-
 ### Four Core Services
 
 | **Azure Service**          | **Description**                                                                                |
