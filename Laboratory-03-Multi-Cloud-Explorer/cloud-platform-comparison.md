@@ -1,5 +1,4 @@
-
-# ☁️ Compare the Major Cloud Platforms
+# ☁️ Checkpoint 3 - Compare the Major Cloud Platforms
 
 ## 🌐 Cloud Platform Comparison
 
