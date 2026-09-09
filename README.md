@@ -22,6 +22,10 @@ Laboratory 02 focused on exploring the core components of cloud infrastructure a
 
 The activities involved investigating a Linux cloud server through the KillerCoda Playground, examining CPU, memory, storage, and networking resources, identifying essential infrastructure components, creating a basic cloud architecture, and comparing infrastructure services offered by AWS, Microsoft Azure, and Google Cloud Platform (GCP).
 
+### ☁️ Laboratory Activity 3 — Become a Multi-Cloud Explorer
+
+Laboratory Activity 3 focused on exploring **☁️ AWS, 🔷 Microsoft Azure, and 🌐 Google Cloud Platform (GCP)**. The activities involved **🔍 comparing cloud services, 🖥️ investigating a Linux cloud server, and 🚀 understanding cloud migration and multi-cloud environments**.
+
 This laboratory also enhanced my knowledge of Linux system administration, cloud infrastructure, technical documentation, Git, and GitHub.
 
 📌 **This portfolio will be continuously updated throughout the semester** as I complete each laboratory activity, checkpoint, and technical exercise.
