@@ -1,4 +1,4 @@
-# Checkpoint 2 – Explore the Three Cloud Platforms
+# Explore the Three Cloud Platforms
 
 ## Amazon Web Services (AWS) Research
 
