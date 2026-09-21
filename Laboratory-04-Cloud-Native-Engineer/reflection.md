@@ -1,4 +1,4 @@
-# 🤔 Reflection — Mission 4: The Cloud-Native Engineer
+# 🤔 Reflection — The Cloud-Native Engineer
 
 This mission was a great learning experience for me because I was able to actually work with **Docker containers** instead of just reading about them. At first, I was a little confused about the difference between Virtual Machines and containers, but after doing the comparison and running Docker commands, I understood that containers are lighter, faster, and use fewer resources than VMs.
 
