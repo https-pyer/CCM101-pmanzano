@@ -26,6 +26,10 @@ The activities involved investigating a Linux cloud server through the KillerCod
 
 Laboratory Activity 3 focused on exploring **☁️ AWS, 🔷 Microsoft Azure, and 🌐 Google Cloud Platform (GCP)**. The activities involved **🔍 comparing cloud services, 🖥️ investigating a Linux cloud server, and 🚀 understanding cloud migration and multi-cloud environments**.
 
+### 🐳 Laboratory Activity 4 — The Cloud-Native Engineer
+
+Laboratory Activity 4 focused on learning **🐳 Docker and containerization**. The activities involved **🔍 comparing Virtual Machines and containers, 💻 executing Docker commands, 🌐 deploying an Nginx web server, and 🔄 managing the container lifecycle**.
+
 This laboratory also enhanced my knowledge of Linux system administration, cloud infrastructure, technical documentation, Git, and GitHub.
 
 📌 **This portfolio will be continuously updated throughout the semester** as I complete each laboratory activity, checkpoint, and technical exercise.
