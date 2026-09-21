@@ -1,4 +1,4 @@
-# 🐳 Docker Container Lifecycle
+# 🐳 Checkpoint 5 - The Container Lifecycle 
 
 This document explains the basic commands used to manage a Docker container, including listing, stopping, verifying, and removing a running container.
 
