@@ -31,10 +31,10 @@ The following Docker commands were used throughout **Checkpoints 3, 4, and 5**.
 
 ### Checkpoint 3 — Checking the Docker Installation
 
-| Command            | Description                                                                                                          |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| `docker --version` | Displays the version of Docker installed in the environment.                                                         |
-| `docker info`      | Shows detailed information about the Docker system, including containers, images, storage, and system configuration. |
+| Command                  | Description                                                                                                          |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| `docker --version`       | Displays the version of Docker installed in the environment.                                                         |
+| `docker info`            | Shows detailed information about the Docker system, including containers, images, storage, and system configuration. |
 
 **Result Observed:**
 
