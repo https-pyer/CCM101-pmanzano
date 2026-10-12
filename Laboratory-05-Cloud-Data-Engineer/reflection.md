@@ -1,1 +1,9 @@
+# 📝 Mission Reflection
 
+Throughout the checkpoints, I gained a better understanding of ☁️ cloud computing, the different types of cloud storage, and how to choose the right storage solution for specific needs. One of the most important lessons I learned was the difference between **block, file, and object storage**. I realized that each type serves a different purpose, and object storage is particularly useful for managing large amounts of unstructured data, such as photos and videos.
+
+Another important lesson was learning how to use 🐳 **Docker** to deploy and manage applications. In Checkpoint 5, I struggled to download the official MinIO images, `minio/minio` and `quay.io/minio/minio`, in my KillerCoda environment. Although I felt frustrated at first, I tried `pgsty/minio` as an alternative to continue the activity. Through this experience, I learned the importance of 🔧 troubleshooting, checking compatibility, and finding solutions when things do not work as expected.
+
+I also learned how to use Docker commands, configure environment variables, map ports, and manage containers. Creating the `client-photos` bucket and uploading sample files helped me understand how object storage works in practice. Additionally, I realized the importance of 🔒 data security, access control, and protecting credentials when managing stored files.
+
+Overall, these checkpoints helped me develop practical skills and become more confident in using the Linux terminal and working with cloud technologies. As an IT student, I believe these lessons will be useful in my future projects, especially when developing applications, deploying services, and managing data securely. 🎯 I want to continue improving my knowledge of cloud computing and containerization so I can become better at solving technical problems and prepare myself for a future career in the IT industry.
