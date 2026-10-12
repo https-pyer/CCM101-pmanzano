@@ -31,8 +31,6 @@ By completing this laboratory activity, I was able to:
 - Create a storage bucket and upload objects (files) to the cloud.
 - Document cloud storage operations using Markdown.
 - Continue expanding a professional GitHub Cloud Computing Portfolio.
-# Laboratory 5: The Cloud Data Engineer
-
 
 ## 🛠️ Tools and Technologies
 
