@@ -33,24 +33,6 @@ By completing this laboratory activity, I was able to:
 - Continue expanding a professional GitHub Cloud Computing Portfolio.
 # Laboratory 5: The Cloud Data Engineer
 
-## 🎯 Mission Overview
-
-In this laboratory, I explored different types of cloud storage and learned how to deploy a storage server using Docker.
-
-Cloud storage has three main types: Block Storage, File Storage, and Object Storage. Object Storage is useful for storing unstructured data, such as images, videos, and backups. Amazon S3 is one example of an object storage service.
-
-For this activity, I used MinIO to set up an S3-compatible storage server in the KillerCoda Ubuntu Playground. I used Docker to run the service, created a storage bucket, and uploaded sample files through the web console.
-
-## 📋 Objectives
-
-After completing this laboratory, I was able to:
-
-- Understand the differences between block, file, and object storage.
-- Deploy a MinIO storage server using Docker.
-- Access a web-based storage service through port forwarding.
-- Create a bucket and upload sample files.
-- Document technical procedures using Markdown.
-- Organize my work in my GitHub Cloud Computing Portfolio.
 
 ## 🛠️ Tools and Technologies
 
