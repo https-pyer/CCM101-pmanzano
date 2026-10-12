@@ -30,6 +30,10 @@ Laboratory Activity 3 focused on exploring **☁️ AWS, 🔷 Microsoft Azure, a
 
 Laboratory Activity 4 focused on learning **🐳 Docker and containerization**. The activities involved **🔍 comparing Virtual Machines and containers, 💻 executing Docker commands, 🌐 deploying an Nginx web server, and 🔄 managing the container lifecycle**.
 
+### 🐳 Laboratory Activity 5 — The Cloud Data Engineer
+
+Laboratory 5 focused on learning **☁️ Cloud Storage and Object Storage**. The activities involved **🔍 comparing Block, File, and Object Storage, 🐳 deploying a MinIO storage server using Docker, 🪣 creating a storage bucket, 📤 uploading files through the web console, and 📝 documenting the deployment process**.
+
 This laboratory also enhanced my knowledge of Linux system administration, cloud infrastructure, technical documentation, Git, and GitHub.
 
 📌 **This portfolio will be continuously updated throughout the semester** as I complete each laboratory activity, checkpoint, and technical exercise.
