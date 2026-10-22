@@ -42,6 +42,10 @@ Laboratory 6 focused on learning **🐳 Docker Compose and Infrastructure as Cod
 
 Laboratory 7 focused on learning **☁️ Cloud Operations and System Monitoring**. The activities involved **🖥️ inspecting host system resources, 🐳 deploying and managing Docker containers, 🌐 configuring and testing an Nginx web server, 📋 analyzing application logs, 📊 monitoring CPU and memory usage, 🔍 identifying successful and failed HTTP requests, and 📝 documenting system performance and operational findings**.
 
+### 🔐 Laboratory Activity 8 — The Cloud Security Engineer
+
+Laboratory 8 focused on learning **☁️ Cloud Security and Infrastructure Protection**. The activities involved **🛡️ identifying cloud security risks, 🔑 managing user permissions and access controls, 🔒 implementing secure authentication practices, 🌐 configuring firewall rules and network security, 🔍 inspecting system logs for suspicious activity, 🐳 applying security best practices to Docker containers, 🚨 identifying potential threats and vulnerabilities, and 📝 documenting security configurations, findings, and recommended improvements**.
+
 This laboratory also enhanced my knowledge of Linux system administration, cloud infrastructure, technical documentation, Git, and GitHub.
 
 📌 **This portfolio will be continuously updated throughout the semester** as I complete each laboratory activity, checkpoint, and technical exercise.
