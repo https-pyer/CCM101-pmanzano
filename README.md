@@ -34,7 +34,7 @@ Laboratory Activity 4 focused on learning **🐳 Docker and containerization**. 
 
 Laboratory 5 focused on learning **☁️ Cloud Storage and Object Storage**. The activities involved **🔍 comparing Block, File, and Object Storage, 🐳 deploying a MinIO storage server using Docker, 🪣 creating a storage bucket, 📤 uploading files through the web console, and 📝 documenting the deployment process**.
 
-### ☁️ Laboratory Activity 6 — The Cloud Deployment Engineer
+### 🐳 Laboratory Activity 6 — The Cloud Deployment Engineer
 
 Laboratory 6 focused on learning **🐳 Docker Compose and Infrastructure as Code (IaC)**. The activities involved **🏗️ understanding multi-tier architecture, 📝 creating a `docker-compose.yml` configuration file, 🚀 deploying Nextcloud and MariaDB containers, 🔗 configuring container networking, 🌐 accessing the Nextcloud web interface, and 📚 documenting the deployment process**.
 
