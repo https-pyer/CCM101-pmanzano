@@ -1,4 +1,4 @@
-# Laboratory 7: The Cloud Operations Engineer
+# ☁️🛠️ Laboratory 7: The Cloud Operations Engineer
 
 ## 🎯 Mission Overview
 
