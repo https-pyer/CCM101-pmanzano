@@ -1,4 +1,4 @@
-# Laboratory 6: The Cloud Deployment Engineer
+# 🐳☁️ Laboratory 6: The Cloud Deployment Engineer
 
 <br>
 
