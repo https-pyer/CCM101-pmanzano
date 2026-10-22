@@ -1,4 +1,4 @@
-# Checkpoint 7 - 💭 Mission Reflection — The Cloud Security Engineer
+#  💭 Checkpoint 7 - Mission Reflection — The Cloud Security Engineer
 
 Completing Laboratory Activity 8 helped me understand why cloud security is an essential part of managing and maintaining a server. I learned that deploying an application is not enough because the server must also be protected against unauthorized network access.
 
