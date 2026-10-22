@@ -38,6 +38,10 @@ Laboratory 5 focused on learning **☁️ Cloud Storage and Object Storage**. Th
 
 Laboratory 6 focused on learning **🐳 Docker Compose and Infrastructure as Code (IaC)**. The activities involved **🏗️ understanding multi-tier architecture, 📝 creating a `docker-compose.yml` configuration file, 🚀 deploying Nextcloud and MariaDB containers, 🔗 configuring container networking, 🌐 accessing the Nextcloud web interface, and 📚 documenting the deployment process**.
 
+### ☁️ Laboratory Activity 7 — The Cloud Operations Engineer
+
+Laboratory 7 focused on learning **☁️ Cloud Operations and System Monitoring**. The activities involved **🖥️ inspecting host system resources, 🐳 deploying and managing Docker containers, 🌐 configuring and testing an Nginx web server, 📋 analyzing application logs, 📊 monitoring CPU and memory usage, 🔍 identifying successful and failed HTTP requests, and 📝 documenting system performance and operational findings**.
+
 This laboratory also enhanced my knowledge of Linux system administration, cloud infrastructure, technical documentation, Git, and GitHub.
 
 📌 **This portfolio will be continuously updated throughout the semester** as I complete each laboratory activity, checkpoint, and technical exercise.
