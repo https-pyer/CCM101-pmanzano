@@ -110,7 +110,7 @@ The following values were observed in the monitoring screenshot:
 | 📌 Metric | 📊 Recorded Value |
 |---|---|
 | 🖥️ CPU Usage | 0.00% |
-| 🧠 Memory Usage | 2.715 MiB / 1.859 GiB (0.14%) |
+| 🧠 Memory Usage | 2.715 MiB / 1.9 GiB (0.14%) |
 | 🌐 Network I/O | 3.77 kB received / 5.29 kB sent |
 | 💾 Block I/O | 0 B read / 12.3 kB written |
 | ⚙️ PIDs | 2 |
