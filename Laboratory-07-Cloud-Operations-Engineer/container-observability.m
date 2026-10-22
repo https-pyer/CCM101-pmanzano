@@ -1,118 +1,126 @@
 # 🐳 Checkpoint 3–5: Container Observability Report
 
-This report explains how I deployed the client's Nginx web server using Docker and monitored its performance. It covers generating test website traffic, checking application logs for successful **HTTP 200** and failed **HTTP 404** requests, and monitoring CPU and memory usage with `docker stats`. These steps help verify the container's basic operation and establish a performance baseline before a possible increase in website traffic during the marketing campaign.
+This report explains how I deployed the client's Nginx web server using Docker and monitored its performance. It covers container deployment, website testing, application log inspection, and resource monitoring using `docker stats`. These activities help determine whether the web server is operating properly before a possible increase in website traffic during a marketing campaign.
 
 ---
 
-## 🚀 1. Deploying the Web Container and Generating Traffic
+## 🚀 1. Deploying the Web Container and Testing Website Access
 
-I deployed the Nginx web server in the background using Docker and named the container `client-website`. I also configured port 8080 on the host to connect to port 80 inside the container.
-
-**Command used:**
+I started the client's Nginx web server in the background and assigned it the container name `client-website`. I also mapped port 8080 on the host machine to port 80 inside the container.
 
 ```bash
 docker run -d --name client-website -p 8080:80 nginx
 ```
 
-**Command explanation:**
+**💡 Command Explanation**
 
-- 🐳 `docker run` creates and starts a new container.
-- ⚙️ `-d` runs the container in the background.
-- 🏷️ `--name client-website` assigns a name to the container.
-- 🌐 `-p 8080:80` maps host port 8080 to container port 80.
-- 📦 `nginx` specifies the official Nginx image, which Docker downloads if it is not already available locally.
+- `-d` — Runs the container in the background.
+- `--name client-website` — Assigns a name to the container.
+- `-p 8080:80` — Maps host port 8080 to container port 80.
+- `nginx` — Specifies the official Nginx image.
 
-After starting the container, I used `curl` to simulate website visits and verify that the web server was responding.
+This command downloads the Nginx image if it is not already available locally and starts the web server inside a Docker container.
 
-### ✅ Simulating Three Successful Visits
+**📝 Figure 1 — Nginx Deployment**
+
+The terminal displays the Docker command used to launch the Nginx container, followed by the container ID confirming that Docker created it.
+
+### 🌐 Testing Successful Website Requests
+
+To check whether the website was accessible, I executed the following command three times:
 
 ```bash
 curl http://localhost:8080
 ```
 
-I executed this command three times to simulate three website visits. Each request accessed the Nginx server through port 8080 and returned the default Nginx welcome page.
+The `curl` command sends an HTTP request to the local web server and displays its response. Since Nginx was running correctly, each request returned the default Nginx welcome page.
 
-These requests demonstrated that the container was running and responding to HTTP requests successfully.
+**📝 Figure 2 — Successful Website Requests**
 
-### ❌ Simulating a Failed Visit
+The terminal shows three requests to `http://localhost:8080`. Each request displays the Nginx welcome page, confirming that the server responds to normal requests.
+
+### ⚠️ Testing an Invalid Page Request
+
+Next, I requested a page that does not exist on the server:
 
 ```bash
 curl http://localhost:8080/hidden-admin-page
 ```
 
-I sent a request to a page that does not exist on the server. Nginx returned a **404 Not Found** response because the requested resource could not be found.
+Because the requested page was unavailable, Nginx returned a `404 Not Found` response. This created a failed request that I could identify by examining the application logs.
 
-This test helped me understand how failed requests appear in application logs and how they can be identified during troubleshooting.
+**📝 Figure 3 — Failed Website Request**
+
+The terminal displays the response from Nginx after requesting `/hidden-admin-page`. The server returns a `404 Not Found` error because the requested resource does not exist.
 
 ---
 
 ## 📋 2. Checking Application Logs
 
-To review the activities recorded by the container, I executed the following command:
+After generating the test requests, I used the following command to inspect the container's logs:
 
 ```bash
 docker logs client-website
 ```
 
-This command displays the output produced by the specified container, including available startup messages and request records written to its output streams.
+This command displays the output produced by the specified container. Depending on the logging configuration, the output may include startup messages and records of HTTP requests handled by the web server.
 
-The logs allow me to check whether the server received the test requests and determine which HTTP status codes were returned.
+**📝 Figure 4 — Docker Application Logs**
 
-### 🔎 Example of a 404 Error Log
+The terminal displays the output of `docker logs client-website`, including records of successful requests and the failed request to `/hidden-admin-page`.
+
+### 🔎 Sample Error Log
+
+The following log entry shows the failed request:
 
 ```text
 172.17.0.1 - - [15/Oct/2026:14:22:37 +0000] "GET /hidden-admin-page HTTP/1.1" 404 153 "-" "curl/8.5.0" "-"
 ```
 
-**Understanding the log entry:**
+The log indicates that the client requested `/hidden-admin-page` using the HTTP GET method. The server returned status code `404`, meaning that the requested page could not be found.
 
-- 🌐 `172.17.0.1` — The recorded client IP address.
-- 🕒 `15/Oct/2026:14:22:37 +0000` — The date and time of the request.
-- 📄 `GET /hidden-admin-page` — The HTTP request method and requested path.
-- ❌ `404` — The HTTP status code indicating that the requested resource was not found.
-- 📦 `153` — The response size in bytes, as recorded in the log.
-- 🛠️ `curl/8.5.0` — The client software that sent the request.
+### 🛠️ Importance of Application Logs in Troubleshooting
 
-### 💡 Importance of Application Logs
-
-Application logs are important because they provide information about requests, response codes, timestamps, and client activity. By examining these records, a cloud operations engineer can identify failed requests, investigate unexpected behavior, and troubleshoot problems more efficiently.
+Application logs help developers and system administrators understand what happens inside an application. They provide useful details such as requested URLs, response status codes, timestamps, and client information. By reviewing these records, engineers can identify errors, investigate unusual requests, and troubleshoot problems more efficiently.
 
 ---
 
 ## 📊 3. Monitoring Real-Time Container Metrics
 
-To check how much of the host system's resources the Nginx container was consuming, I used the following command:
+To observe the container's resource consumption, I executed the following command:
 
 ```bash
 docker stats
 ```
 
-This command displays a continuously updating view of running containers and their resource consumption. It provides information about CPU usage, memory usage, network traffic, block input/output, and the number of running processes.
+The `docker stats` command provides continuously updated information about running containers. It displays CPU usage, memory consumption, network traffic, block input/output, and the number of running processes.
 
-### 📈 Container Performance Results
+**📝 Figure 5 — Container Resource Monitoring**
 
-The following values were recorded from the `docker stats` screenshot:
+The terminal displays the live resource statistics for `client-website`, including CPU percentage, memory usage, network activity, block I/O, and process count.
 
-| Metric          | Recorded Value                  |
-| --------------- | ------------------------------- |
-| ⚙️ CPU Usage    | 0.00%                           |
-| 🧠 Memory Usage | 2.715 MiB / 1.9 GiB (0.14%)     |
-| 🌐 Network I/O  | 3.77 kB received / 5.29 kB sent |
-| 💾 Block I/O    | 0 B read / 12.3 kB written      |
-| 🔄 PIDs         | 2                               |
+### 📈 Recorded Container Metrics
 
-### 🩺 Interpreting the Results
+The following values were observed in the screenshot during monitoring:
 
-At the time of monitoring, the `client-website` container was using **0.00% CPU** and approximately **2.715 MiB of memory**, equivalent to 0.14% of its displayed memory limit or available allocation.
+| 📌 Metric | 📊 Recorded Value |
+|---|---|
+| 🖥️ CPU Usage | 0.00% |
+| 🧠 Memory Usage | 2.715 MiB / 1.859 GiB (0.14%) |
+| 🌐 Network I/O | 3.77 kB received / 5.29 kB sent |
+| 💾 Block I/O | 0 B read / 12.3 kB written |
+| ⚙️ PIDs | 2 |
 
-These results indicate that the container was consuming very few resources under the light test workload. The network and block I/O values also provide a record of the traffic and data operations observed during monitoring.
+At the time of observation, the container consumed only 2.715 MiB of memory and reported 0.00% CPU usage. These results indicate low resource consumption while the container was operating under light load.
 
-However, these measurements represent only a brief baseline after a small number of test requests. They do not guarantee that the container will remain healthy during thousands of simultaneous visits. Additional load testing and continued monitoring would be necessary to evaluate its behavior under heavy traffic.
+However, these measurements represent only a small test involving four HTTP requests. They do not establish how the container would perform under heavy traffic or thousands of simultaneous users. Additional load testing and continuous monitoring would be necessary to evaluate its performance during a major increase in website visitors.
 
 ---
 
 ## 🎯 Conclusion
 
-In Checkpoints 3–5, I learned how to deploy an Nginx web server using Docker, generate successful and unsuccessful HTTP requests, inspect application logs, and monitor container resource usage in real time.
+Through this activity, I learned how to deploy an Nginx web server using Docker, test website accessibility, inspect application logs, and monitor container resource usage.
 
-These activities demonstrated how **container deployment, log analysis, and performance monitoring** work together in cloud operations. By establishing a baseline and understanding the collected metrics, an engineer can identify potential issues and prepare the application for increased website traffic during a marketing campaign.
+The successful HTTP requests confirmed that the server was responding correctly, while the `404` response demonstrated how an invalid request could be identified in the logs. The `docker stats` output also provided a snapshot of the container's resource consumption.
+
+These monitoring techniques are important in cloud operations because they help engineers identify application errors, evaluate resource usage, and establish a baseline for future performance comparisons. They also help determine whether additional resources or optimization may be needed as website traffic increases.
