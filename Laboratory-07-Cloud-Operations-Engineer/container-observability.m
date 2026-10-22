@@ -1,22 +1,24 @@
 # 🐳 Checkpoint 3–5: Container Observability Report
 
-This report explains how I deployed the client's Nginx web server using Docker and monitored its performance. It covers container deployment, website testing, application log inspection, and resource monitoring using `docker stats`. These activities help determine whether the web server is operating properly before a possible increase in website traffic during a marketing campaign.
+This report documents how I deployed the client's Nginx web server using Docker and monitored its performance. It covers container deployment, website accessibility testing, application log inspection, and real-time resource monitoring using `docker stats`. These activities help evaluate the web server's behavior under light load and establish a baseline for future monitoring.
 
 ---
 
 ## 🚀 1. Deploying the Web Container and Testing Website Access
 
-I started the client's Nginx web server in the background and assigned it the container name `client-website`. I also mapped port 8080 on the host machine to port 80 inside the container.
+I started the client's Nginx web server in the background and assigned it the container name `client-website`. I also mapped port `8080` on the host machine to port `80` inside the container.
+
+### 💻 Deployment Command
 
 ```bash
 docker run -d --name client-website -p 8080:80 nginx
 ```
 
-**💡 Command Explanation**
+### 💡 Command Explanation
 
 - `-d` — Runs the container in the background.
 - `--name client-website` — Assigns a name to the container.
-- `-p 8080:80` — Maps host port 8080 to container port 80.
+- `-p 8080:80` — Maps host port `8080` to container port `80`.
 - `nginx` — Specifies the official Nginx image.
 
 This command downloads the Nginx image if it is not already available locally and starts the web server inside a Docker container.
@@ -27,17 +29,17 @@ The terminal displays the Docker command used to launch the Nginx container, fol
 
 ### 🌐 Testing Successful Website Requests
 
-To check whether the website was accessible, I executed the following command three times:
+To verify website accessibility, I executed the following command three times:
 
 ```bash
 curl http://localhost:8080
 ```
 
-The `curl` command sends an HTTP request to the local web server and displays its response. Since Nginx was running correctly, each request returned the default Nginx welcome page.
+The `curl` command sends an HTTP request to the local web server and displays the response. Because Nginx was running correctly, each request returned the default Nginx welcome page.
 
 **📝 Figure 2 — Successful Website Requests**
 
-The terminal shows three requests to `http://localhost:8080`. Each request displays the Nginx welcome page, confirming that the server responds to normal requests.
+The terminal shows three requests to `http://localhost:8080`. Each request displays the Nginx welcome page, confirming that the server responds to normal HTTP requests.
 
 ### ⚠️ Testing an Invalid Page Request
 
@@ -47,7 +49,7 @@ Next, I requested a page that does not exist on the server:
 curl http://localhost:8080/hidden-admin-page
 ```
 
-Because the requested page was unavailable, Nginx returned a `404 Not Found` response. This created a failed request that I could identify by examining the application logs.
+Because the requested resource was unavailable, Nginx returned a `404 Not Found` response. This generated a failed request that could be identified by examining the application logs.
 
 **📝 Figure 3 — Failed Website Request**
 
@@ -63,7 +65,7 @@ After generating the test requests, I used the following command to inspect the 
 docker logs client-website
 ```
 
-This command displays the output produced by the specified container. Depending on the logging configuration, the output may include startup messages and records of HTTP requests handled by the web server.
+This command displays the output produced by the specified container. Depending on the logging configuration, the output may include startup messages and HTTP request records.
 
 **📝 Figure 4 — Docker Application Logs**
 
@@ -71,13 +73,15 @@ The terminal displays the output of `docker logs client-website`, including reco
 
 ### 🔎 Sample Error Log
 
-The following log entry shows the failed request:
+The following example illustrates a log entry for a failed request:
 
 ```text
 172.17.0.1 - - [15/Oct/2026:14:22:37 +0000] "GET /hidden-admin-page HTTP/1.1" 404 153 "-" "curl/8.5.0" "-"
 ```
 
-The log indicates that the client requested `/hidden-admin-page` using the HTTP GET method. The server returned status code `404`, meaning that the requested page could not be found.
+The log indicates that the client requested `/hidden-admin-page` using the HTTP `GET` method. The server returned status code `404`, meaning that the requested resource could not be found.
+
+*Note: Use the actual log entry from your terminal screenshot if its timestamp, client address, or response details differ from this example.*
 
 ### 🛠️ Importance of Application Logs in Troubleshooting
 
@@ -101,7 +105,7 @@ The terminal displays the live resource statistics for `client-website`, includi
 
 ### 📈 Recorded Container Metrics
 
-The following values were observed in the screenshot during monitoring:
+The following values were observed in the monitoring screenshot:
 
 | 📌 Metric | 📊 Recorded Value |
 |---|---|
@@ -111,9 +115,9 @@ The following values were observed in the screenshot during monitoring:
 | 💾 Block I/O | 0 B read / 12.3 kB written |
 | ⚙️ PIDs | 2 |
 
-At the time of observation, the container consumed only 2.715 MiB of memory and reported 0.00% CPU usage. These results indicate low resource consumption while the container was operating under light load.
+At the time of observation, the container consumed approximately `2.715 MiB` of memory and reported `0.00%` CPU usage. These results indicate low resource consumption during the observed period.
 
-However, these measurements represent only a small test involving four HTTP requests. They do not establish how the container would perform under heavy traffic or thousands of simultaneous users. Additional load testing and continuous monitoring would be necessary to evaluate its performance during a major increase in website visitors.
+However, these measurements represent a small test involving four HTTP requests. They do not establish how the container would perform under heavy traffic or thousands of simultaneous users. Additional load testing and continuous monitoring would be necessary to evaluate its performance during a major increase in website visitors.
 
 ---
 
