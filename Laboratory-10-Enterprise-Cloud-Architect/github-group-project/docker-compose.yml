@@ -1,0 +1,91 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: shared_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cloudnova-admin
+      POSTGRES_PASSWORD: newpassword-2_true
+      POSTGRES_DB: vaultwarden
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+    networks:
+      - cloudnova-network
+
+  gitea:
+    image: gitea/gitea:1.21-rootless
+    container_name: gitea_app
+    restart: unless-stopped
+    environment:
+      - GITEA__database__DB_TYPE=postgres
+      - GITEA__database__HOST=db:5432
+      - GITEA__database__NAME=gitea
+      - GITEA__database__USER=cloudnova-admin
+      - GITEA__database__PASSWD=newpassword-2_true
+    volumes:
+      - gitea_data:/var/lib/gitea
+    depends_on:
+      - db
+    networks:
+      - cloudnova-network
+
+  vaultwarden:
+    image: vaultwarden/server:alpine
+    container_name: vaultwarden_app
+    restart: unless-stopped
+    environment:
+      - DATABASE_URL=postgresql://cloudnova-admin:newpassword-2_true@db:5432/vaultwarden
+      - SIGNUPS_ALLOWED=false
+      - WEBSOCKET_ENABLED=true
+    volumes:
+      - vaultwarden_data:/data
+    depends_on:
+      - db
+    networks:
+      - cloudnova-network
+
+  pihole:
+    image: pihole/pihole:latest
+    container_name: pihole_app
+    restart: unless-stopped
+    environment:
+      - TZ=UTC
+      - FTLCONF_webserver_api_password=newpassword-2_true
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "8081:80"
+    volumes:
+      - pihole_data:/etc/pihole
+      - dnsmasq_data:/etc/dnsmasq.d
+    networks:
+      - cloudnova-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx_proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./certs:/etc/nginx/certs:ro
+    depends_on:
+      - gitea
+      - vaultwarden
+      - pihole
+    networks:
+      - cloudnova-network
+
+volumes:
+  postgres_data:
+  gitea_data:
+  pihole_data:
+  dnsmasq_data:
+  vaultwarden_data:
+
+networks:
+  cloudnova-network:
+    driver: bridge
