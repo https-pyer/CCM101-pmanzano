@@ -67,6 +67,7 @@
 | **07** | The Cloud Operations Engineer | `Monitoring` `Log Analysis` `Performance` | <img src="https://img.shields.io/badge/Completed-00E676?style=flat"/> |
 | **08** | The Cloud Security Engineer | `Security` `Access Control` `Firewalls` `Hardening` | <img src="https://img.shields.io/badge/Completed-00E676?style=flat"/> |
 | **09** | The Cloud Automation Engineer | `Bash Scripting` `Cron Jobs` `Automation` `Backups` | <img src="https://img.shields.io/badge/Completed-00E676?style=flat"/> |
+| **10** | The Enterprise Cloud Architect | `Enterprise Architecture` `High Availability` `Scalability` `Disaster Recovery` | <img src="https://img.shields.io/badge/Completed-00E676?style=flat"/> |
 
 ---
 
@@ -77,7 +78,7 @@
 <br/>
 
 > **Overview:** Introduces fundamentals of working in a cloud-based Linux environment.
-* **Key Activities:** Linux terminal commands, system information gathering, file/directory management, Markdown documentation, and GitHub version control.
+- **Key Activities:** Linux terminal commands, system information gathering, file/directory management, Markdown documentation, and GitHub version control.
 </details>
 
 <details>
@@ -85,7 +86,7 @@
 <br/>
 
 > **Overview:** Exploration of core cloud infrastructure components and resource interactions.
-* **Key Activities:** KillerCoda Playground exploration, CPU/Memory/Storage/Network resource inspection, cloud architecture mapping, and provider comparisons (AWS vs. Azure vs. GCP).
+- **Key Activities:** KillerCoda Playground exploration, CPU/Memory/Storage/Network resource inspection, cloud architecture mapping, and provider comparisons (AWS vs. Azure vs. GCP).
 </details>
 
 <details>
@@ -93,7 +94,7 @@
 <br/>
 
 > **Overview:** Deep-dive analysis into multi-cloud environments across AWS, Azure, and GCP.
-* **Key Activities:** Service comparisons across major providers, cloud server investigation, and exploring cloud migration strategies.
+- **Key Activities:** Service comparisons across major providers, cloud server investigation, and exploring cloud migration strategies.
 </details>
 
 <details>
@@ -101,7 +102,7 @@
 <br/>
 
 > **Overview:** Hands-on containerization experience using Docker.
-* **Key Activities:** VM vs. Container comparison, CLI execution, deploying Nginx web server containers, and managing container lifecycles.
+- **Key Activities:** VM vs. Container comparison, CLI execution, deploying Nginx web server containers, and managing container lifecycles.
 </details>
 
 <details>
@@ -109,7 +110,7 @@
 <br/>
 
 > **Overview:** Focus on Cloud Storage and Object Storage solutions.
-* **Key Activities:** Block/File/Object storage analysis, deploying a MinIO server via Docker, creating buckets, and Web Console file management.
+- **Key Activities:** Block/File/Object storage analysis, deploying a MinIO server via Docker, creating buckets, and Web Console file management.
 </details>
 
 <details>
@@ -117,7 +118,7 @@
 <br/>
 
 > **Overview:** Hands-on practice with Docker Compose and Infrastructure as Code (IaC).
-* **Key Activities:** Multi-tier architecture design, writing `docker-compose.yml` configurations, orchestrating Nextcloud and MariaDB containers, and network isolation.
+- **Key Activities:** Multi-tier architecture design, writing `docker-compose.yml` configurations, orchestrating Nextcloud and MariaDB containers, and network isolation.
 </details>
 
 <details>
@@ -125,7 +126,7 @@
 <br/>
 
 > **Overview:** Practice in Cloud Operations, system monitoring, and application health maintenance.
-* **Key Activities:** Host resource inspection, Nginx log analysis, CPU/RAM monitoring, tracking HTTP traffic status codes, and documenting system performance metrics.
+- **Key Activities:** Host resource inspection, Nginx log analysis, CPU/RAM monitoring, tracking HTTP traffic status codes, and documenting system performance metrics.
 </details>
 
 <details>
@@ -133,7 +134,7 @@
 <br/>
 
 > **Overview:** Application of Cloud Security concepts, access governance, and infrastructure hardening.
-* **Key Activities:** Risk identification, IAM/RBAC management, firewall configurations, analyzing logs for intrusion attempts, and hardening Docker container security.
+- **Key Activities:** Risk identification, IAM/RBAC management, firewall configurations, analyzing logs for intrusion attempts, and hardening Docker container security.
 </details>
 
 <details>
@@ -141,7 +142,15 @@
 <br/>
 
 > **Overview:** Focus on Cloud Automation, task scheduling, and Linux shell scripting.
-* **Key Activities:** Shell script creation, directory/file management, script permission management (`chmod`), automated backups via timestamped archives, scheduling recurring tasks with Cron, and verifying backup integrity.
+- **Key Activities:** Shell script creation, directory/file management, script permission management (`chmod`), automated backups via timestamped archives, scheduling recurring tasks with Cron, and verifying backup integrity.
+</details>
+
+<details>
+<summary><b><img src="https://cdn.simpleicons.org/blueprint/BD93F9" width="16"/> Laboratory 10 — The Enterprise Cloud Architect</b></summary>
+<br/>
+
+> **Overview:** Synthesis of end-to-end enterprise cloud architecture design, integrating scalability, resilience, security, and operational governance.
+- **Key Activities:** Designing high-availability (HA) and fault-tolerant systems, load balancing and auto-scaling strategies, disaster recovery (DR) planning, cost optimization, and aligning infrastructure with enterprise compliance standards.
 </details>
 
 ---
